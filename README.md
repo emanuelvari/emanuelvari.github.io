@@ -5,14 +5,14 @@ Economics graduate (BSc International Economics, UNINT Rome, 110/110) building a
 I approach data problems with a rigorous, verification-first mindset: I use AI tools to speed up execution, but I always validate results independently before trusting them.
 
 📍 Rome, Italy — Open to relocation
-🔗 [LinkedIn](www.linkedin.com/in/emanuel-vari-877863274)
+🔗 [LinkedIn](INSERISCI-QUI-IL-TUO-LINK-LINKEDIN)
 📧 emanuel.vari@gmail.com
 
 ---
 
 ## Projects
 
-### [Loan Portfolio Backtesting — Power BI](progetto-ubs.md)
+### [Loan Portfolio Backtesting — Power BI](loan-portfolio-backtesting.md)
 End-to-end Power BI model backtesting a loan portfolio against a rolling threshold, with independent Python validation that caught a real data bug.
 
 ---
