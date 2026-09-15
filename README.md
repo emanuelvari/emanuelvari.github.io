@@ -16,5 +16,7 @@ I approach data problems with a rigorous, verification-first mindset: I use AI t
 End-to-end Power BI model backtesting a loan portfolio against a rolling threshold, with independent Python validation that caught a real data bug.
 
 ---
+### [Competitor Web Traffic Analysis — Excel & Python](competitor-traffic-analysis.md)
+Comparative scorecard analysis across five companies using a visit-weighted methodology, with Python cross-validation and transparent data quality handling.
 
 *More projects coming soon.*
