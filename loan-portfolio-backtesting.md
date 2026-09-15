@@ -21,8 +21,9 @@ While cross-validating every DAX result independently in Python, I discovered a 
 
 ## Visualizations
 
-- A historical trend line chart with breach points explicitly marked
-- A small-multiples comparison of rolling change by year, with a manually forced uniform Y-axis across panels for accurate visual comparison
+![Portfolio value growth with breach points](dashboard-trend.jpg)
+
+![Monthly rolling change by year](dashboard-yearly-comparison.jpg)
 
 ## Results & Recommendation
 
