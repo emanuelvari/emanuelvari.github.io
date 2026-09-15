@@ -18,4 +18,6 @@ End-to-end Power BI model backtesting a loan portfolio against a rolling thresho
 ---
 ### [Competitor Web Traffic Analysis — Excel & Python](competitor-traffic-analysis.md)
 Comparative scorecard analysis across five companies using a visit-weighted methodology, with Python cross-validation and a defensible executive-ready recommendation.
+
+---
 *More projects coming soon.*
