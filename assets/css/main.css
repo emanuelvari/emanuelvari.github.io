@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  --ink: #14181c;
+  --ink-soft: #3a4149;
+  --paper: #ffffff;
+  --paper-dim: #f7f6f4;
+  --line: #e2e0da;
+  --accent: #a6631b;
+  --accent-soft: #d9c2a3;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'IBM Plex Sans', -apple-system, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.masthead {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 4.5rem 1.5rem 3.5rem;
+  border-bottom: 3px solid var(--accent);
+}
+
+.masthead-inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.masthead h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.3rem;
+}
+
+.masthead .role {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.95rem;
+  color: var(--accent-soft);
+  margin: 0 0 1.6rem;
+}
+
+.masthead p {
+  color: #cfd3d8;
+  font-size: 1.02rem;
+  max-width: 46ch;
+  margin: 0 0 1.6rem;
+}
+
+.masthead .meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  font-size: 0.92rem;
+  color: #b8bec5;
+}
+
+.masthead .meta > * { margin-right: 1.4rem; }
+.masthead .meta > *:last-child { margin-right: 0; }
+
+.masthead .meta a {
+  color: var(--paper);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+}
+
+.masthead .meta a:hover { color: var(--accent-soft); }
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 5rem;
+}
+
+.section-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  margin: 0 0 1.6rem;
+}
+
+.project {
+  padding: 2.2rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.project:first-of-type { border-top: none; padding-top: 0; }
+
+.project h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.project h3 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.project h3 a:hover { color: var(--accent); }
+
+.project p {
+  color: var(--ink-soft);
+  margin: 0 0 0.8rem;
+  max-width: 56ch;
+}
+
+.project .tools {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.82rem;
+  color: #8a8f96;
+}
+
+.note {
+  color: #8a8f96;
+  font-size: 0.95rem;
+  margin-top: 2.5rem;
+}
+
+/* Project detail pages */
+
+.back-link {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.back-link:hover { color: var(--accent); }
+
+article h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: -0.01em;
+  margin: 0 0 2rem;
+  line-height: 1.25;
+}
+
+article h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.5rem;
+  margin: 2.6rem 0 1.1rem;
+}
+
+article p, article li {
+  color: var(--ink-soft);
+  max-width: 62ch;
+}
+
+article ul { padding-left: 1.2rem; }
+article li { margin-bottom: 0.5rem; }
+
+article strong { color: var(--ink); }
+
+article code {
+  font-family: 'IBM Plex Mono', monospace;
+  background: var(--paper-dim);
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  margin: 1.8rem 0;
+}
+
+article .callout {
+  border-left: 3px solid var(--accent);
+  background: var(--paper-dim);
+  padding: 1rem 1.3rem;
+  margin: 1.8rem 0;
+  font-size: 0.98rem;
+}
+
+footer {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.82rem;
+  color: #8a8f96;
+}
+
+@media (max-width: 600px) {
+  .masthead { padding: 3rem 1.25rem 2.5rem; }
+  .masthead h1 { font-size: 2.1rem; }
+  main, footer { padding-left: 1.25rem; padding-right: 1.25rem; }
+}
