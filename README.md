@@ -5,7 +5,7 @@ Economics graduate (BSc International Economics, UNINT Rome, 110/110) building a
 I approach data problems with a rigorous, verification-first mindset: I use AI tools to speed up execution, but I always validate results independently before trusting them.
 
 📍 Rome, Italy — Open to relocation
-🔗 [LinkedIn](www.linkedin.com/in/emanuel-vari-877863274)
+🔗 [LinkedIn]( http://www.linkedin.com/in/emanuel-vari-877863274)
 📧 emanuel.vari@gmail.com
 
 ---
