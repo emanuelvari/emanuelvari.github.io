@@ -37,4 +37,4 @@ Power BI (Power Query, DAX), Python (independent validation), Excel.
 
 ---
 
-[← Back to home](index.md)
+[← Back to home](README.md)
