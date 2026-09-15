@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loan Portfolio Backtesting — Emanuel Vari</title>
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <h1>Emanuel Vari</h1>
+    <p class="role">DATA ANALYTICS — REPORTING — BUSINESS INTELLIGENCE</p>
+  </div>
+</header>
+
+<main>
+<a class="back-link" href="index.html">← Back to home</a>
+
+<article>
+<h1>Loan Portfolio Backtesting — Power BI</h1>
+
+<h2>Objective</h2>
+<p>Build a Power BI model to backtest a loan portfolio against a defined breach threshold on a rolling 21-business-day change, across three years of daily portfolio index data. Completed as a technical exercise applying real-world risk monitoring methodology.</p>
+
+<h2>Method</h2>
+<ul>
+<li><strong>Data modeling</strong>: cleaned and transformed the raw dataset in Power Query, building a continuous sequential index to correctly handle year boundary resets.</li>
+<li><strong>DAX measures</strong>: rolling 21-business-day percentage change; a breach flag for periods crossing the threshold; daily and annualized change (based on 252 trading days); annualized standard deviation using population standard deviation (<code>STDEV.P</code>), not sample (<code>STDEV.S</code>), since the full dataset was available; a 21-day moving average via <code>AVERAGEX</code> + <code>FILTER</code>; a helper column to highlight breach points on the chart.</li>
+</ul>
+
+<h2>Key finding — a real data bug</h2>
+<p>While cross-validating every DAX result independently in Python, I discovered a data localization issue: decimal points in the source data were being misread due to locale settings, silently inflating certain values by a large factor.</p>
+<div class="callout">Catching this before finalizing the analysis was only possible because I treated the Python cross-check as a real validation step, not a formality — comparing every key output line by line rather than trusting the DAX results at face value.</div>
+
+<h2>Visualizations</h2>
+<p>A historical trend line chart with breach points explicitly marked, and a small-multiples comparison of rolling change by year, with a manually forced uniform Y-axis across panels for accurate visual comparison.</p>
+
+<h2>Results &amp; recommendation</h2>
+<p>The portfolio grew steadily over the three-year period, with a small number of threshold breaches concentrated in the most recent year, where both the annualized change and annualized standard deviation were markedly higher than in prior years.</p>
+<p><strong>Recommendation:</strong> rather than widening the breach threshold, which would mask legitimate risk signals, the model should be periodically recalibrated to reflect the portfolio's evolving volatility profile.</p>
+
+<h2>Tools used</h2>
+<p>Power BI (Power Query, DAX), Python (independent validation), Excel.</p>
+</article>
+</main>
+
+<footer>emanuel.vari@gmail.com</footer>
+
+</body>
+</html>
